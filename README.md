@@ -46,7 +46,7 @@ The analysis leveraged multiple analytical approaches to understand customer beh
 
 ### Implementation Approaches
 **1. Collaborative Filtering:**
-- Cosine Similarity Approach:
+- Cosine Similarity Approach (Item Based):
   - Created sparse user-item interaction matrix from transaction data. Matrix values are binary (1 for purchase interactions or else 0)
   - Computed item-item similarity using cosine similarity
 - ALS:
