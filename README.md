@@ -10,8 +10,7 @@ The project uses three main datasets:
 - customers.csv: Customer demographics with age, postal code, member status (1.37M users)
 - transactions.csv: Purchase records from 2018-2020 containing customer ID, article ID, price, sales channel (28.8M transactions)
 
-Due to GitHub size restrictions, data files are not included in the repository. 
-Please download from https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations/data
+Download data from https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations/data
 
 
 ## Repository Contents
@@ -34,10 +33,11 @@ The analysis leveraged multiple analytical approaches to understand customer beh
 
 ### Data Processing
 **Data Sampling:** Selected last 6 weeks of data due to fast fashion's seasonal nature
-- Original dataset:
-  - Articles: 105,542 items
-  - Transactions: 28,813,419 records
-  - Customers: 1,371,980 users
+
+**Why use Latest Weeks?​**
+  - Captures most recent user preferences and behavioral patterns​
+  - Accounts for seasonal trends and current market dynamics​
+  - Reflects current product availability and popularity​
 
 **Data Splitting**
   - Training: 2020-08-12 to 2020-09-15 (5 weeks)
@@ -69,7 +69,8 @@ The analysis leveraged multiple analytical approaches to understand customer beh
   - Used global item popularity metrics
 
 ### Evaluation
-All of the approaches are evaluated using Mean Average Precision @ 12 (MAP@12)
+- All of the approaches are evaluated using Mean Average Precision @ 12 (MAP@12). 
+- Evaluation was performed on 68,984 customers present in the test set.
 
 ## Installation and Usage
 To set up the project, clone the repository, navigate to the directory, and install dependencies.
